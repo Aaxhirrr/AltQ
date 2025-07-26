@@ -1,99 +1,113 @@
-# AltQ
- 
-🚀 AltQ – Alternative Question Enhancer Chrome Extension
+# 🚀 AltQ – Alternative Question Enhancer Chrome Extension
 
-AltQ is a lightweight Chrome extension designed to enhance browsing efficiency by injecting custom scripts into webpages, automating tasks, and providing a quick-access popup interface built with React. This is ideal for automating repetitive actions or interacting with sites more effectively.
+AltQ is a lightweight Chrome extension that enhances browsing efficiency by injecting custom scripts into webpages, automating tasks, and providing a quick-access popup interface built with React. It streamlines repetitive actions and improves user interaction on supported sites.
 
-✨ Features
+---
 
-🚀 Chrome extension with React-based popup
+## ✨ Features
 
-🧠 Content scripts for in-page interaction
+* 🚀 **React Popup UI**: Seamless, component-driven popup interface.
+* 🧠 **Content Scripts**: Injects scripts into matching pages for dynamic behavior.
+* 🔄 **Background Service Worker**: Handles long-running tasks and messaging.
+* ⚙️ **Options Page**: Configurable settings (if applicable).
+* 📦 **Modern Tooling**: Built with Webpack, Babel, and TypeScript.
+* 🎨 **SCSS Styling**: Modular, maintainable stylesheets.
 
-🛠️ Background scripts for long-running tasks
+---
 
-⚙️ Options page (if needed)
+## 🛠️ Tech Stack
 
-📦 Built using Webpack, Babel, and TypeScript
+* **React** for UI components
+* **TypeScript** for type safety
+* **Webpack** for bundling
+* **Babel** for transpilation
+* **SCSS** for styling
+* **Chrome Extension APIs (MV3)** for browser integration
 
-🎨 SCSS styling for modern UI
+---
 
-🛠️ Tech Stack
+## 📁 Folder Structure
 
-React – Popup and component-based UI
-
-TypeScript – Type-safe development
-
-Webpack – Bundling and module management
-
-SCSS – Styling
-
-Chrome Extension APIs – Messaging, runtime, storage
-
-📁 Folder Structure
-
+```text
 AltQ/
-├── public/                      # Static files (favicon, manifest.json)
-├── src/
-│   ├── content/                 # Content scripts injected into target sites
-│   ├── background/              # Background service workers
-│   ├── popup/                   # Popup HTML + React component
-│   ├── options/                 # Options page UI (if any)
-│   ├── styles/                  # CSS/SCSS files
-│   ├── utils/                   # Helper scripts and utilities
-│   └── index.tsx                # React entry point
-├── package.json                 # Project dependencies and metadata
-├── webpack.config.js            # Webpack bundling config
-├── .babelrc                     # Babel transpilation rules
-├── .editorconfig                # Editor formatting rules
-├── .gitignore                   # Files to ignore in Git
-└── README.md                    # You're reading it :)
+├── public/                   # Static assets (manifest.json, icons)
+├── src/                      # Source code
+│   ├── content/              # Content scripts (e.g., skipAd.js)
+│   ├── background/           # Background service worker (e.g., background.js)
+│   ├── popup/                # React popup components (popup.html, popup.js)
+│   ├── options/              # Options page UI (if implemented)
+│   ├── styles/               # SCSS/CSS files
+│   ├── utils/                # Helper modules and utilities
+│   └── index.tsx             # React entrypoint
+├── dist/                     # Compiled extension files (auto-generated)
+├── package.json              # NPM scripts & dependencies
+├── webpack.config.js         # Webpack configuration
+├── .babelrc                  # Babel config
+├── .editorconfig             # Editor config
+├── .gitignore                # Git ignore rules
+└── README.md                 # Project documentation
+```
 
-🚧 Getting Started
+---
 
-Clone this repo
+## 🚧 Getting Started
 
-git clone https://github.com/Aaxhirrr/AltQ.git
+Follow these steps to run and test the extension locally:
 
-Install dependencies
+1. **Clone the repository**
 
-npm install
+   ```bash
+   git clone https://github.com/Aaxhirrr/AltQ.git
+   cd AltQ
+   ```
 
-Build the extension
+2. **Install dependencies**
 
-npm run build
+   ```bash
+   npm install
+   ```
 
-Load it into Chrome
+3. **Build the extension**
 
-Go to chrome://extensions/
+   ```bash
+   npm run build
+   ```
 
-Enable Developer Mode
+4. **Load into Chrome**
 
-Click Load unpacked
+   * Open `chrome://extensions/` in your browser.
+   * Enable **Developer mode**.
+   * Click **Load unpacked** and select the `dist/` folder.
 
-Select the dist/ or build/ folder
+---
 
-🧪 Development
+## 🧪 Development Mode
 
-Start in development mode with hot reload:
+For live reloading during development:
 
+```bash
 npm run start
+```
 
-Use src/content for content scripts, and src/popup for the popup UI.
+* Edits in `src/` will rebuild and reload the extension.
+* Use `src/content` for page scripts and `src/popup` for popup UI.
 
-🤝 Contributing
+---
 
-Pull requests are welcome. For major changes, open an issue first to discuss what you’d like to change.
+## 🤝 Contributing
 
-🧼 License
+Contributions are welcome! Please open an issue or pull request for enhancements or bug fixes.
 
-MIT © Aashir JavedBased on original scaffolding by Subodh Kamble
+---
 
-🔍 References
+## 📄 License
 
-Chrome Extension Docs
+This project is licensed under the MIT License.
 
-React Docs
+---
 
-Webpack Docs
+## 🔗 Resources
 
+* [Chrome Extension Docs](https://developer.chrome.com/docs/extensions/)
+* [React Documentation](https://reactjs.org/)
+* [Webpack Documentation](https://webpack.js.org/)
